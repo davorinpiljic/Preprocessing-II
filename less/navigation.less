@@ -1,1 +1,32 @@
-// Navigation Styles here
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: dashed lightgray 1.5px;
+
+    @media @phoneView {
+        flex-direction: column;
+        align-content: center;
+    }
+    
+    h1 {
+        padding-left: 50px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        padding-right: 50px;
+    }
+
+    nav p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}

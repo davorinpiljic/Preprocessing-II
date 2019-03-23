@@ -1,1 +1,21 @@
 // Mixins in here
+
+.buttonStyle(@width; @color; @padding; @backgroundColor; @borderRadius) {
+    padding: @padding;
+    width: @width;
+    color: @color;
+    background-color: @backgroundColor;
+    border-radius: @borderRadius;
+}
+
+@-webkit-keyframes changeBackground {.changeColor;}
+@-moz-keyframes changeBackground {.changeColor;}
+@-ms-keyframes changeBackground {.changeColor;}
+@-o-keyframes changeBackground {.changeColor;}
+@keyframes changeBackground {.changeColor;}
+
+.changeColor() {
+    from {background-color: white;}
+    from {background-color: green;}
+}
+
